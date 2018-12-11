@@ -15,12 +15,13 @@ public class dinoMovement : MonoBehaviour
 	{
 		// you better attach the Gameobject rigid body to DinoRb from  unity when every thing is done
 		DinoRb = GetComponent<Rigidbody>();
+		DinoRb.freezeRotation = true;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		gameController gc = gameController.GetComponent<gameController>();
+		GameController gc = gameController.GetComponent<GameController>();
 		if (gc.isRunning)
 		{
 			if (Input.GetKey(KeyCode.Space) && dinoTr.transform.position.y < 2)

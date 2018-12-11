@@ -8,7 +8,7 @@ public class followDino : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		offset = new Vector3(0, 15, -30);
+		offset = new Vector3(10, 4, 0);
 	}
 	
 	// Update is called once per frame

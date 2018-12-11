@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114068546401156636}
   m_Layer: 0
   m_Name: CONDOR
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,3 +227,4 @@ MonoBehaviour:
   rb: {fileID: 54379660960577412}
   forwardForce: 25
   obstacle: {fileID: 1345092563978212}
+  gameController: {fileID: 0}

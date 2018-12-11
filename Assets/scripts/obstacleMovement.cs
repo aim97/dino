@@ -10,21 +10,24 @@ public class obstacleMovement : MonoBehaviour
 	
 	// Use this for initialization
 	void Start (){
-		forwardForce = 10;
+		forwardForce = 5;
+		rb.freezeRotation = true;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate(){
-		gameController gc = gameController.GetComponent<gameController>();
+		GameController gc = gameController.GetComponent<GameController>();
 		if (gc.isRunning)
 		{
 			rb.AddForce(forwardForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-			if (obstacle.transform.position.x > 10)
-			{
-				Destroy(obstacle);
-			}
-
-			forwardForce += 0.001f * Time.deltaTime;
+		}
+		else
+		{
+			rb.isKinematic = true;
+		}
+		if (obstacle.transform.position.x > 10)
+		{
+			Destroy(obstacle);
 		}
 	}
 }
