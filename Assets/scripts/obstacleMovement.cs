@@ -10,7 +10,7 @@ public class obstacleMovement : MonoBehaviour
 	
 	// Use this for initialization
 	void Start (){
-		forwardForce = 5;
+		forwardForce = 3;
 		rb.freezeRotation = true;
 	}
 	
