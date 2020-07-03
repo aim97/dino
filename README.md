@@ -6,5 +6,5 @@ right arrow : go right
 space : jump  
 - you lose when you hit a cactus or a condor  
 - the game always keeps track of current score and max score  
-## video :  
+## demo :  
 https://www.youtube.com/watch?v=YYoFrFNHvzs&feature=youtu.be
